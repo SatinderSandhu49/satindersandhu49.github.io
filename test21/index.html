@@ -57,7 +57,7 @@
 
         var cubeMaterials = 
         [
-            new THREE.MeshLambertMaterial({color:0xff0000, side:THREE.DoubleSide}),
+            new THREE.MeshLambertMaterial({map : new THREE.textureLoader().load('img/1.jpg'), side:THREE.DoubleSide}),
             new THREE.MeshLambertMaterial({color:0x3f0f46, side:THREE.DoubleSide}),
             new THREE.MeshLambertMaterial({color:0xff640f, side:THREE.DoubleSide}),
             new THREE.MeshPhongMaterial({color:0xff36f0, side:THREE.DoubleSide}),
