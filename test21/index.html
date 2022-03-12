@@ -57,7 +57,7 @@
 
         var cubeMaterials = 
         [
-            new THREE.MeshLambertMaterial({map : new THREE.textureLoader().load('img/1.jpg'), side:THREE.DoubleSide}),
+            new THREE.MeshPhongMaterial({map : new THREE.TextureLoader().load('img/1.jpg'), side:THREE.DoubleSide}),
             new THREE.MeshLambertMaterial({color:0x3f0f46, side:THREE.DoubleSide}),
             new THREE.MeshLambertMaterial({color:0xff640f, side:THREE.DoubleSide}),
             new THREE.MeshPhongMaterial({color:0xff36f0, side:THREE.DoubleSide}),
@@ -75,7 +75,7 @@ scene.add(cube);
 
 camera.position.z = 3;
 
- var ambientLight = new THREE.AmbientLight(0xFF0000, 5);
+ var ambientLight = new THREE.AmbientLight(0xFFFFFF, 0.8);
  scene.add(ambientLight);
 
  var ambientLight2 = new THREE.AmbientLight(0xFFFFFF, 0.5);
